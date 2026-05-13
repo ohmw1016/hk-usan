@@ -1,55 +1,24 @@
-# Prerequisites
-*.d
+# --- [1] 실행 파일 (바이너리) 제외 ---
+# 빌드된 결과물들은 깃허브에 올리지 않습니다.
+check
+led
+motor
+sw
+qr_scanner
+vibration_test
+servo_test
 
-# Object files
+# --- [2] 컴파일 중간 파일 및 라이브러리 ---
 *.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
 *.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+*.a
+*.so
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# --- [3] 편집기 및 시스템 임시 파일 ---
+# 민우 님 폴더에 있던 .swp와 .lgd 파일을 차단합니다.
+*.swp
+.lgd-*
+.vscode/
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# --- [4] 기타 ---
+*.log
